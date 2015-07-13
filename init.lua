@@ -106,6 +106,8 @@ local apps = {
   p = "Preview"
 }
 
+apps["1"] = "1Password"
+
 for key, name in pairs(apps) do
   hs.hotkey.bind(hyper, key, function()
     hs.application.launchOrFocus(name)
@@ -156,10 +158,6 @@ end)
 --   app:activate()
 --   moveCursorToWindowCenter()
 -- end)
-
-hs.hotkey.bind(hyper, 'r', function()
-  hs.reload()
-end)
 
 
 function reloadConfig(files)
