@@ -133,9 +133,10 @@ end
 
 hs.hotkey.bind(hyper, "0", function()
   local apps = {
-    { name = 'Slack',            x = 0,    y = 0,    w = 1080,  h = 600 },
-    { name = 'Telegram',            x = 0,    y = 600,    w = 1080,  h = 600 },
-    { name = 'QQ',               x = 0,    y = 1200,  w = 1080,  h = 660 },
+    { name = 'Slack',            x = 0,    y = 0,    w = 1080,  h = 650 },
+    --{ name = 'Telegram',            x = 0,    y = 650,    w = 1080,  h = 600 },
+    { name = 'WeChat',            x = 0,    y = 650,    w = 1080,  h = 600 },
+    { name = 'QQ',               x = 0,    y = 1250,  w = 1080,  h = 645 },
   }
   for _, app in pairs(apps) do
     local a = hs.appfinder.appFromName(app.name)
