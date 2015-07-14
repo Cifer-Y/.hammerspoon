@@ -100,7 +100,7 @@ local apps = {
   k = "Slack",
   i = "iTerm",
   f = "finder",
-  e = "Atom",
+  --e = "Emacs",
   w = "WeChat",
   t = "Telegram",
   p = "Preview"
@@ -152,12 +152,12 @@ hs.hotkey.bind(hyper, "0", function()
   end
 end)
 
--- hs.hotkey.bind(hyper, "e", function()
---   local app = hs.appfinder.appFromName("Emacs")
---   if app == nil then return end
---   app:activate()
---   moveCursorToWindowCenter()
--- end)
+hs.hotkey.bind(hyper, "e", function()
+  local app = hs.appfinder.appFromName("Emacs")
+  if app == nil then return end
+  app:activate()
+  moveCursorToWindowCenter()
+end)
 
 
 function reloadConfig(files)
