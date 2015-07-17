@@ -98,12 +98,10 @@ local apps = {
   q = 'QQ',
   g = "Google Chrome",
   k = "Slack",
-  i = "iTerm",
-  f = "finder",
+  --i = "iTerm"
   --e = "Emacs",
   w = "WeChat",
-  t = "Telegram",
-  p = "Preview"
+  t = "Telegram"
 }
 
 apps["1"] = "1Password"
@@ -133,10 +131,10 @@ end
 
 hs.hotkey.bind(hyper, "0", function()
   local apps = {
-    { name = 'Slack',            x = 0,    y = 0,    w = 1080,  h = 650 },
-    --{ name = 'Telegram',            x = 0,    y = 650,    w = 1080,  h = 600 },
-    { name = 'WeChat',            x = 0,    y = 650,    w = 1080,  h = 600 },
-    { name = 'QQ',               x = 0,    y = 1250,  w = 1080,  h = 645 },
+    { name = 'Slack',            x = 959,    y = 0,    w = 959,  h = 1150 },
+    { name = 'Telegram',            x = 0,    y = 465,    w = 959,  h = 590 },
+    --{ name = 'WeChat',            x = 0,    y = 650,    w = 1080,  h = 600 },
+    { name = 'QQ',               x = 0,    y = 0,  w = 959,  h = 560 },
   }
   for _, app in pairs(apps) do
     local a = hs.appfinder.appFromName(app.name)
